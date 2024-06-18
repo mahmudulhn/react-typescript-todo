@@ -79,63 +79,80 @@ react-typescript-todo/
 
 To install the project dependencies, run:
 
-````bash
+```bash
 npm install
+```
+
 ## Running the Application
+
 To start the development server, run:
+
 ```bash
 npm start
+```
+
 This will run the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Components Overview
 
 ### App.tsx
+
 The root component that incorporates other components to build the application.
 
 ### NewTodo.tsx
+
 A form component that handles the addition of new todo items.
 
 **Props**:
+
 - `onAddTodo` (function): A callback function to handle adding a new todo.
 
 ### TodoItem.tsx
+
 A component that displays a single todo item.
 
 **Props**:
+
 - `text` (string): The text of the todo item.
 - `onRemoveTodo` (function): A callback function to handle the removal of the todo item.
 
 ### Todos.tsx
+
 A component that displays a list of todo items.
 
 **Props**:
+
 - `items` (array): An array of todo items.
 - `onRemoveTodo` (function): A callback function to handle the removal of a todo item.
 
 ## Context API
 
 ### todos-context.tsx
+
 Provides a context for managing the state of todo items.
 
 **State**:
+
 - `items` (array): An array of todo items.
 
 **Actions**:
+
 - `addTodo` (function): Adds a new todo item.
 - `removeTodo` (function): Removes a todo item by its ID.
 
 ## Models
 
 ### todo.ts
+
 Defines the structure of a Todo item.
+
 ```typescript
 export interface Todo {
   id: string;
   text: string;
 }
-## CSS Modules
-Each component has its own CSS module for scoped styling. This ensures styles are locally scoped to the component and do not affect other parts of the application.
+```
 
 ## Conclusion
+
 This documentation provides an overview of the React TypeScript Todo application. It includes information about the file structure, key components, installation, and running instructions. Each component is briefly described along with its props and functionality, providing a comprehensive guide for understanding and working with the project.
-````

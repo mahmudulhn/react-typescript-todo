@@ -1,7 +1,9 @@
 # Project Overview
+
 This is a simple Todo application built with React and TypeScript. The application allows users to add and remove tasks from a list.
 
 ## File Structure
+
 ```java
 react-typescript-todo/
 ├── .gitignore
@@ -32,9 +34,12 @@ react-typescript-todo/
     │   └── todo.ts
     └── store/
         └── todos-context.tsx
+```
+
 ## Key Files and Directories
 
 ### Root Directory
+
 - **.gitignore**: Specifies files and directories to be ignored by Git.
 - **package-lock.json**: Automatically generated file that describes the exact dependency tree.
 - **package.json**: Contains metadata about the project and dependencies.
@@ -42,16 +47,19 @@ react-typescript-todo/
 - **tsconfig.json**: Configures the TypeScript compiler options.
 
 ### Public Directory
+
 - **index.html**: The main HTML file that serves the React application.
 - **manifest.json**: Provides metadata used when the web app is installed on a user's device.
 - **robots.txt**: Instructs web robots (like search engines) how to interact with the site.
 
 ### Src Directory
+
 - **App.tsx**: The main component that serves as the entry point for the application.
 - **index.css**: Global CSS file.
 - **index.tsx**: Entry point for the React application.
 
 ### Components Directory
+
 - **NewTodo.tsx**: Component for adding a new todo item.
 - **NewTodo.module.css**: CSS module for the NewTodo component.
 - **TodoItem.tsx**: Component for displaying a single todo item.
@@ -60,14 +68,18 @@ react-typescript-todo/
 - **Todos.module.css**: CSS module for the Todos component.
 
 ### Models Directory
+
 - **todo.ts**: Defines the structure of a Todo item using TypeScript interfaces.
 
 ### Store Directory
+
 - **todos-context.tsx**: Context API for managing the state of todo items.
 
 ## Installation
+
 To install the project dependencies, run:
-```bash
+
+````bash
 npm install
 ## Running the Application
 To start the development server, run:
@@ -124,29 +136,6 @@ export interface Todo {
 ## CSS Modules
 Each component has its own CSS module for scoped styling. This ensures styles are locally scoped to the component and do not affect other parts of the application.
 
-### Example of a CSS Module (NewTodo.module.css)
-```css
-form {
-  margin-bottom: 1rem;
-}
-input {
-  font: inherit;
-  padding: 0.25rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-}
-button {
-  font: inherit;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #ccc;
-  cursor: pointer;
-}
-button:hover,
-button:active {
-  background: #aaa;
-}
 ## Conclusion
 This documentation provides an overview of the React TypeScript Todo application. It includes information about the file structure, key components, installation, and running instructions. Each component is briefly described along with its props and functionality, providing a comprehensive guide for understanding and working with the project.
+````
